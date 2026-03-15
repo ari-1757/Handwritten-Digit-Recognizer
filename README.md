@@ -1,12 +1,12 @@
 # Handwritten-Digit-Recognizer
-Overview
+#Overview
 
 This project is a handwritten digit recognition web application that allows users to draw a digit (0–9) on a canvas and get a prediction from a trained machine learning model.
 
 The model is trained using a Support Vector Machine (SVM) on the MNIST dataset.
 The user interface is built with Streamlit, allowing real-time interaction through a web browser.
 
-Features
+#Features
 
 Draw digits directly in the browser
 
@@ -20,7 +20,7 @@ Image preprocessing pipeline similar to MNIST
 
 Clean two-column Streamlit interface
 
-Project Structure
+#Project Structure
 digit_recoganization/
 │
 ├── digit_gui_predictor.py      # Streamlit web application
@@ -43,13 +43,13 @@ Start the Streamlit web application:
 
 streamlit run digit_gui_predictor.py
 
-Then open the browser at:
+#Then open the browser at:
 
-http://localhost:8501
+ http://localhost:8501
 
 Draw a digit in the canvas and the model will predict the number.
 
-Model Training
+#Model Training
 
 The model is trained using the MNIST dataset with the following pipeline:
 
@@ -61,7 +61,7 @@ Train a Support Vector Machine classifier
 
 Save the trained model using joblib
 
-Example training code:
+#Example training code:
 
 from sklearn import svm
 from sklearn.metrics import accuracy_score
@@ -101,7 +101,7 @@ Normalize pixel values
 
 This preprocessing significantly improves prediction accuracy.
 
-Example Output
+#Example Output
 
 After drawing a digit, the application displays:
 
